@@ -12,7 +12,6 @@ import {
     faUser,
 } from '@fortawesome/free-solid-svg-icons';
 import Tippy from '@tippyjs/react';
-
 import Button from '~/components/Button';
 import images from '~/assets/images';
 import Menu from '~/components/Popper/Menu';
