@@ -81,7 +81,7 @@ function Header() {
         {
             icon: <FontAwesomeIcon icon={faGear} />,
             title: 'Settings',
-            to: '/Settings',
+            to: '/settings',
         },
         ...MENU_ITEMS,
         {
@@ -130,8 +130,8 @@ function Header() {
                     <Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handleMenuChange}>
                         {currentUser ? (
                             <Image
-                                src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-6/278029946_7848453055168363_9220427641853804635_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=lmnqTMw6EjcAX9j6pvW&_nc_ht=scontent.fsgn5-9.fna&oh=00_AT_AuvcjgIivQ3Q6R7xJ20q42FHYNwcRXtVVjtIlm-duJA&oe=62C08BA4"
                                 className={cx('user-avatar')}
+                                src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-6/278029946_7848453055168363_9220427641853804635_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=lmnqTMw6EjcAX9j6pvW&_nc_ht=scontent.fsgn5-9.fna&oh=00_AT_AuvcjgIivQ3Q6R7xJ20q42FHYNwcRXtVVjtIlm-duJA&oe=62C08BA4"
                                 alt="Nguyen Minh Hung"
                             />
                         ) : (
