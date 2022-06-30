@@ -38,14 +38,14 @@ function Menu({ children, items = [], hideOnClick = false, onChange = defaultFn 
         setHistory((prev) => prev.slice(0, prev.length - 1));
     };
 
-    const renderResult = (attrs) => {
+    const renderResult = (attrs) => (
         <div className={cx('menu-list')} tabIndex="-1" {...attrs}>
             <PopperWrapper className={cx('menu-popper')}>
                 {history.length > 1 && <Header title={current.title} onBack={handleBack} />}
                 <div className={cx('menu-body')}>{renderItems()}</div>
             </PopperWrapper>
-        </div>;
-    };
+        </div>
+    );
 
     //Reset to first page
     const handleReset = () => {
